@@ -1,4 +1,5 @@
 export const environment = {
     JSON_SERVER_BASE_URL: "http://localhost:3000",
-    JSON_URL_API_GAMES: "https://api.rawg.io/api/platforms?key=54e9f98ef79b43179c3d10f0d6241706"
+    NEWS_API_BASE_URL: "https://newsapi.org/v2/",
+    NEWS_API_KEY: "e5a7438bfed245cc82f855598f706adb"
 };

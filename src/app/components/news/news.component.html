@@ -1,0 +1,14 @@
+<div *ngIf="model">
+  <mat-card *ngFor="let n of news">
+    <!-- <p>{{ n.id }}</p> -->
+    <h3>{{ n.name }}</h3>
+    <h5>{{ n.title }}</h5>
+    <!-- <a href="{{ n.urlToImage }}">{{ n.urlToImage }}</a> -->
+    <img src="{{ n.urlToImage }}" alt="" />
+    <p>{{ n.description }}</p>
+    <!-- <p>{{ n.url }}</p> -->
+    <a href="{{ n.url }}" target="_blank">{{ n.url }}</a>
+    <!-- <p>{{ n.country }}</p>
+    <p>{{ n.language }}</p> -->
+  </mat-card>
+</div>
