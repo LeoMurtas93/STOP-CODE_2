@@ -28,16 +28,12 @@
 
 <!-- <input type="text" matInput [(ngModel)]="searchTerm" placeholder="Cerca" />
 <button (click)="search()">Cerca</button> -->
-<div *ngIf="model">
-  <mat-card *ngFor="let n of newsSearch">
-    <!-- <p>{{ n.id }}</p> -->
-    <h3>{{ n.author }}</h3>
-    <h5>{{ n.title }}</h5>
-    <a href="{{ n.urlToImage }}">{{ n.urlToImage }}</a>
-    <p>{{ n.description }}</p>
-    <!-- <p>{{ n.url }}</p> -->
-    <a href="{{ n.url }}" target="_blank">{{ n.url }}</a>
-    <!-- <p>{{ n.country }}</p>
-    <p>{{ n.language }}</p> -->
-  </mat-card>
-</div>
+<!-- <div *ngIf="model"> -->
+<mat-card *ngFor="let n of newsSearch">
+  <h3>{{ n.author }}</h3>
+  <h5>{{ n.title }}</h5>
+  <a href="{{ n.urlToImage }}">{{ n.urlToImage }}</a>
+  <p>{{ n.description }}</p>
+  <a href="{{ n.url }}" target="_blank">{{ n.url }}</a>
+</mat-card>
+<!-- </div> -->

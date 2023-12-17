@@ -11,7 +11,7 @@ import { NewNewsDto, SourceNews } from 'src/model/news.model';
 })
 export class HomeComponent {
 
-  model?: NewNewsDto;
+  // model?: NewNewsDto;
   newsSearch: SourceNews[] = []
 
   constructor(public searchService: SearchService, public newsService: NewsService, private router: Router) { }
